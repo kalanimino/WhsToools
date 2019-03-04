@@ -1,6 +1,6 @@
 <template>
   <div class="HeaderCom">
-    <v-toolbar class="">
+    <v-toolbar fixed app class="">
       <v-toolbar-side-icon @click="drawer=!drawer"></v-toolbar-side-icon>
       <v-toolbar-title class="headline text-uppercase mr-5">
         <span>PHN</span>
@@ -9,7 +9,7 @@
 
       <v-toolbar-items>
 
-        <v-btn flat color="grey"class="">
+        <v-btn flat color="grey" class="">
           <v-icon>home</v-icon>
         </v-btn>
 
