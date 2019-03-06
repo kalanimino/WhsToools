@@ -1,6 +1,6 @@
 <template>
     <div class="body">
-        <v-parallax :src="require('@/assets/banner.png')" height="170">
+        <v-parallax :src="require('@/assets/banner2.png')" height="170">
 
                                 <v-container>
 

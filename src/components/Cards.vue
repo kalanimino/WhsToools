@@ -2,7 +2,7 @@
     <v-container>
 
         <v-layout row justify-center align-center wrap>
-            <v-flex xs12 sm6 xl4 v-for="items in cards" :key="items.slogan">
+            <v-flex xs12 sm12 xl4 v-for="items in cards" :key="items.slogan">
 
                 <v-card class="grey lighten-3 mx-5" height="550" fluid>
                     <v-responsive>
