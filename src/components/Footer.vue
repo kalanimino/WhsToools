@@ -7,9 +7,11 @@
         <v-btn v-for="link in links" :key="link" color="grey" round flat>
           {{ link }}
         </v-btn>
+        <a href="github.com/kalanimino/WhsToools">
         <v-btn color="grey" flat round class="px-5">
           <v-icon>code</v-icon>
         </v-btn>
+        </a>
         </v-layout>
         </v-card-title>
       </v-card>
