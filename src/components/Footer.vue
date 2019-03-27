@@ -1,5 +1,5 @@
 <template>
-  <v-footer>
+  <v-footer class="mt-5">
     <v-card class="flex flat tile">
       <v-card-title class="grey lighten-3 px-5 #E0E0E0--text">
         <strong>Waipahu High School</strong>

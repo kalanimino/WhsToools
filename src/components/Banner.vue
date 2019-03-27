@@ -1,8 +1,8 @@
 <template>
     <div class="body">
-        <v-parallax :src="require('@/assets/banner2.png')" height="170">
+        <v-parallax :src="require('@/assets/banner2.png')" height="330">
 
-                                <v-container>
+                                <v-container id="text" class="my-5">
 
                                     <v-layout column>
 
