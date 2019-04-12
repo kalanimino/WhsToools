@@ -19,8 +19,8 @@
             <span>Registration &nbsp</span><v-icon small>expand_more</v-icon>
           </v-btn>
           </template>
-        <v-list>
-          <v-list-tile v-for="menu in menu" :key="menu" @click="">
+        <v-list class="grey lighten-3">
+          <v-list-tile v-for="menu in menu" :key="menu" @click="" class="grey lighten-3" grow>
             <v-list-tile-title>{{ menu.title }}</v-list-tile-title>
           </v-list-tile>
         </v-list>
@@ -33,8 +33,8 @@
           <span>Honors &nbsp</span><v-icon small>expand_more</v-icon>
           </v-btn>
           </template>
-        <v-list>
-          <v-list-tile v-for="menu in menu2" :key="menu" @click="">
+        <v-list class="grey lighten-3">
+          <v-list-tile v-for="menu in menu2" :key="menu" @click="" class="grey lighten-3">
             <v-list-tile-title>{{ menu.title }}</v-list-tile-title>
           </v-list-tile>
         </v-list>
