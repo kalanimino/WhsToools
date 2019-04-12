@@ -16,7 +16,7 @@
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
           <v-btn flat color="grey" class="px-4" v-on="on">
-            <span>Registration</span>
+            <span>Registration ▼</span>
           </v-btn>
           </template>
         <v-list>
@@ -30,7 +30,7 @@
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
           <v-btn flat color="grey" v-on="on">
-          <span>Honors</span>
+          <span>Honors ▼</span>
           </v-btn>
           </template>
         <v-list>
@@ -57,19 +57,15 @@
     data: () => ({
       drawer: false,
       menu: [
-        {title:"registration", icon: "some_Icon", link:"some_link"},
-        {title:"registration", icon: "some_Icon", link:"some_link"},
-        {title:"registration", icon: "some_Icon", link:"some_link"},
-        {title:"registration", icon: "some_Icon", link:"some_link"}
+        {title:"Math", icon: "some_Icon", link:"some_link"},
+        {title:"Science", icon: "some_Icon", link:"some_link"},
+        {title:"Language", icon: "some_Icon", link:"some_link"},
       ],
-
       menu2: [
-        {title:"honors", icon: "some_Icon", link:"some_link"},
-        {title:"honors", icon: "some_Icon", link:"some_link"},
-        {title:"honors", icon: "some_Icon", link:"some_link"},
-        {title:"honors", icon: "some_Icon", link:"some_link"}
+        {title:"Academic", icon: "some_Icon", link:"some_link"},
+        {title:"CTE", icon: "some_Icon", link:"some_link"},
+        {title:"STEM", icon: "some_Icon", link:"some_link"},
       ]
-
     })
   }
 </script>
