@@ -9,19 +9,37 @@
 
       <v-toolbar-items>
 
-        <v-btn flat color="grey" class="">
+        <v-btn flat color="grey" class="" href="@/App">
           <v-icon>home</v-icon>
         </v-btn>
 
-        <v-btn flat color="grey" class="px-4 ">
-          <span>Registration</span>
-        </v-btn>
-
+        <v-menu offset-y open-on-hover>
+          <template v-slot:activator="{ on }">
+          <v-btn flat color="grey" class="px-4" v-on="on">
+            <span>Registration</span>
+          </v-btn>
+          </template>
+        <v-list>
+          <v-list-tile v-for="menu in menu" :key="menu" @click="">
+            <v-list-tile-title>{{ menu.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+        </v-menu>
         <v-divider vertical class="py-3" inset></v-divider>
-
-        <v-btn flat color="grey">
+        
+        <v-menu offset-y open-on-hover>
+          <template v-slot:activator="{ on }">
+          <v-btn flat color="grey" v-on="on">
           <span>Honors</span>
-        </v-btn>
+          </v-btn>
+          </template>
+        <v-list>
+          <v-list-tile v-for="menu in menu2" :key="menu" @click="">
+            <v-list-tile-title>{{ menu.title }}</v-list-tile-title>
+          </v-list-tile>
+        </v-list>
+        </v-menu>
+       
       </v-toolbar-items>
 
       <v-spacer></v-spacer>
@@ -37,7 +55,20 @@
 <script>
   export default {
     data: () => ({
-      drawer: false
+      drawer: false,
+      menu: [
+        {title:"registration", icon: "some_Icon", link:"some_link"},
+        {title:"registration", icon: "some_Icon", link:"some_link"},
+        {title:"registration", icon: "some_Icon", link:"some_link"},
+        {title:"registration", icon: "some_Icon", link:"some_link"}
+      ],
+
+      menu2: [
+        {title:"honors", icon: "some_Icon", link:"some_link"},
+        {title:"honors", icon: "some_Icon", link:"some_link"},
+        {title:"honors", icon: "some_Icon", link:"some_link"},
+        {title:"honors", icon: "some_Icon", link:"some_link"}
+      ]
 
     })
   }
