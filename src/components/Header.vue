@@ -16,7 +16,7 @@
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
           <v-btn flat color="grey" class="px-4" v-on="on">
-            <span>Registration ▼</span>
+            <span>Registration</span><v-icon small>expand_more</v-icon>
           </v-btn>
           </template>
         <v-list>
@@ -30,7 +30,7 @@
         <v-menu offset-y open-on-hover>
           <template v-slot:activator="{ on }">
           <v-btn flat color="grey" v-on="on">
-          <span>Honors ▼</span>
+          <span>Honors </span><v-icon small>expand_more</v-icon>
           </v-btn>
           </template>
         <v-list>
